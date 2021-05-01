@@ -4,6 +4,10 @@ def mmol_l_na_mg_dl(glukoza2):
     glukoza2_1 = glukoza2 * 18
     return glukoza2_1
 
+def mg_dl_na_mmol_l(glukoza1):
+    glukoza1_1 = glukoza1 / 18
+    return glukoza1_1
+
 while jednostka != "mmol/l" and jednostka != "mg/dl":
     print("Jednostka została źle wpisana")
     jednostka = input("W jakiej jednostce chcesz podać stężenie glukozy - mg/dl czy mmol/l? - wpisz odpowiednią: ")
@@ -24,9 +28,6 @@ if jednostka == "mg/dl":
         glukoza1 = int(input("Ponownie zmierzona wartość stężenia glukozy w mg/dl wynosi: "))
     przelicznik1 = input("Czy chcesz przeliczyć wartość w mg/dl na mmol/l? - wpisz tak lub nie: ")
     if przelicznik1 == "tak":
-        def mg_dl_na_mmol_l(glukoza1):
-            glukoza1_1 = glukoza1 / 18
-            return glukoza1_1
         print(mg_dl_na_mmol_l(glukoza1))
     elif przelicznik1 == "nie":
         print("nie to nie")
