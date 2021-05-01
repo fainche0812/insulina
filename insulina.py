@@ -51,3 +51,5 @@ elif jednostka == "mmol/l":
         print(mmol_l_na_mg_dl(glukoza2))
     elif przelicznik2 == "nie":
         print("nie to nie")
+
+input()
